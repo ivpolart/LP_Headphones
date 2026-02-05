@@ -1,0 +1,67 @@
+// forms
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	padding: 10px 15px;
+
+	width: 100% !important;
+	color: #8E969B;
+	margin: 0 0 18px;
+	border: none;
+	border-bottom: 1px solid #D9DCDE;
+	outline: none;
+
+	// &:hover {
+
+	// }
+
+	&:focus {
+		border-color: #000;
+	}
+
+	@include placeholder {
+		color: inherit;
+	}
+}
+
+select {
+	-webkit-border-radius: 0;
+}
+
+textarea {
+	resize: vertical;
+	vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	margin: 20px 0 0;
+
+	@include media ('>=tablet') {
+		padding: 22px 38px;
+		min-width: 240px;
+	}
+}

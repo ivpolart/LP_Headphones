@@ -1,0 +1,215 @@
+//elements
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 50px;
+
+	@include media ('>=phone') {
+		font-size: 78px;
+	}
+
+	@include media ('>=tablet') {
+		font-size: 124px;
+	}
+
+	@include media ('>=desktop') {
+		font-size: 180px;
+		font-weight: 600;
+	}
+}
+
+h2 {
+	font-size: 34px;
+
+	@include media ('>=phone') {
+		font-size: 42px;
+	}
+
+	@include media ('>=desktop') {
+		font-size: 48px;
+	}
+}
+
+h3 {
+	font-size: 32px;
+
+	@include media ('>=phone') {
+		font-size: 36px;
+	}
+
+	@include media ('>=desktop') {
+		font-size: 40px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+
+	@include media ('>=phone') {
+		font-size: 28px;
+	}
+
+	@include media ('>=desktop') {
+		font-size: 32px;
+	}
+}
+
+h5 {
+	font-size: 20px;
+
+	@include media ('>=phone') {
+		font-size: 24px;
+	}
+
+	@include media ('>=desktop') {
+		font-size: 28px;
+	}
+}
+
+h6 {
+	font-size: 18px;
+
+	@include media ('>=phone') {
+		font-size: 20px;
+	}
+
+	@include media ('>=desktop') {
+		font-size: 24px;
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.container {
+	max-width: 1320px;
+	padding: 0 20px;
+	width: 100%;
+	margin: 0 auto;
+
+	@include media ('>=desktop') {
+		padding: 0 40px;
+	}
+}
+
+.btn {
+	@include animate(background);
+
+	display: inline-block;
+	background: $black;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1;
+	color: $white;
+
+	@include media ('>=tablet') {
+		padding: 15px 32px;
+		font-size: 20px;
+	}
+}
+
+.logo {
+	display: inline-block;
+	width: 150px;
+
+	@include media ('>=tablet') {
+		width: 199px;
+	}
+
+	a, img {
+		display: block;
+	}
+}
+
+.intro-section {
+	background: linear-gradient(#D2CDC6 0%, #F5F5F5 100%);
+	position: relative;
+	padding: 70px 0;
+	display: flex;
+	flex-direction: column;
+
+	@include media(">=tablet") {
+		min-height: 700px;
+	}
+	
+	@include media(">=desktop") {
+		padding: 30px 0;
+		min-height: 936px;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-grow: 1;
+	}
+
+	.img-holder {
+		position: relative;
+		max-width: 220px;
+		margin: 0 auto;
+		z-index: 2;
+
+		@include media(">=phone") {
+			max-width: 300px;
+		}
+		
+		@include media(">=tablet") {
+			max-width: 500px;
+		}
+		
+		@include media(">=desktop") {
+			max-width: 651px;
+			margin: 27px auto 0;
+		}
+	}
+
+	.title-01 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -30px;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+		color: $brown;
+
+		@include media(">=phone") {
+			margin-top: -50px;
+		}
+
+		@include media(">=tablet") {
+			margin-top: -110px;
+		}
+	}
+
+	.title-02 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		margin-top: 30px;
+		background: linear-gradient(0deg, #DACCBC 0%, #AFA497 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+
+		@include media(">=phone") {
+			margin-top: 50px;
+		}
+		
+		@include media(">=tablet") {
+			margin-top: 60px;
+		}
+	}
+}

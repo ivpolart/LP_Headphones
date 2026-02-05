@@ -1,0 +1,61 @@
+// Colors
+$black: #000;
+$gray: #999;
+$white: #fff;
+
+$brown: #52483E;
+
+// Fonts
+$font-sans-serif: 'Poppins', 'Arial', 'Helvetica', sans-serif;
+// $font-serif:	  'Avenir', 'Arial', 'Helvetica', sans-serif;
+
+// Body styles
+$body-background-color: $white;
+$body-text-weight:		400;
+$body-font-size: 		16px;
+$body-line-height:		1.5;
+$body-font-family:		$font-sans-serif;
+$body-text-color:		$black;
+$body-min-width:		320px;
+
+//p, ul, ol margins
+$paragraph-margins: 0 0 .5em;
+
+// Link
+$link-color:		   inherit;
+$link-text-decoration: underline;
+
+// Headings
+$headings-font-weight: 700;
+$headings-font-family: $font-sans-serif;
+$headings-color:	   inherit;
+	//h1
+	$h1-fs-phone:   30px;
+	$h1-fs-tablet:  35px;
+	$h1-fs-desktop: 40px;
+	//h2
+	$h2-fs-phone:   25px;
+	$h2-fs-tablet:  30px;
+	$h2-fs-desktop: 35px;
+	//h3
+	$h3-fs-phone:   23px;
+	$h3-fs-tablet:  27px;
+	$h3-fs-desktop: 30px;
+	//h4
+	$h4-fs-phone:   21px;
+	$h4-fs-tablet:  24px;
+	$h4-fs-desktop: 27px;
+	//h5
+	$h5-fs-phone:   18px;
+	$h5-fs-tablet:  21px;
+	$h5-fs-desktop: 23px;
+	//h6
+	$h6-fs-phone:   16px;
+	$h6-fs-tablet:  18px;
+	$h6-fs-desktop: 20px;
+
+
+// Default html and body font-size for the base rem value.
+$rem-base: 16px;
+$vertical-rhythm: ($body-line-height * 1em);
+$animation-speed: 0.2s;

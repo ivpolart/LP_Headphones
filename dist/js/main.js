@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initSlider() {
-	const sliderBlock =  document.querySelector('.product-swiper');
+	const sliderBlock =  document.querySelector('.products-swiper');
 	const prevBtn = sliderBlock.querySelector('.bullet-prev');
 	const activeBtn = sliderBlock.querySelector('.bullet-active');
 	const nextBtn = sliderBlock.querySelector('.bullet-next');
 	
-	const swiper = new Swiper('.products-swiper', {
+	const swiper = new Swiper(sliderBlock, {
 		loop: true,
 		centeredSlides: true,
 		slidesPerView: 3,
@@ -32,22 +32,34 @@ function initSlider() {
 		return slideEl.dataset.color;
 	}
 
-	function updateCustomPagination() {
-    // В loop режиме swiper.slides содержит клоны, поэтому берём "реальные" индексы через realIndex
-    const realIndex = swiper.realIndex; // 0..(n-1)
-    const realSlides = sliderBlock.querySelectorAll('.swiper-wrapper > .swiper-slide:not(.swiper-slide-duplicate)');
-    const total = realSlides.length;
+	function customPagination() {
+		const activeIndex = swiper.realIndex;
+		const realSlides = sliderBlock.querySelectorAll('.swiper-wrapper > .swiper-slide:not(.swiper-slide-duplicate)');
+		const totalSlides = realSlides.length;
+		
+		const prevIdx = (activeIndex - 1 + totalSlides) % totalSlides;
+		const nextIdx = (activeIndex + 1) % totalSlides;
 
-    const prevIdx = (realIndex - 1 + total) % total;
-    const nextIdx = (realIndex + 1) % total;
+		prevBtn.style.background = getColorPagination(realSlides[prevIdx]);
+		activeBtn.style.background = getColorPagination(realSlides[activeIndex]);
+		nextBtn.style.background = getColorPagination(realSlides[nextIdx]);
+		console.log('realIndex:', swiper.realIndex);
+		console.log(nextBtn.style.background);
+		
+		console.log('realIndex', swiper.realIndex, 'activeIndex', swiper.activeIndex);
 
-    btnPrev.style.background = getColorFromSlideEl(realSlides[prevIdx]);
-    btnActive.style.background = getColorFromSlideEl(realSlides[realIndex]);
-    btnNext.style.background = getColorFromSlideEl(realSlides[nextIdx]);
-  }
-	
-	// document.querySelector('.custom-pagination').addEventListener('click', e => {
-	// 	if (e.target.dataset.dir === 'prev') swiper.slidePrev();
-	// 	if (e.target.dataset.dir === 'next') swiper.slideNext();
-	// });
+  	}
+
+	// swiper.on('init', customPagination)
+	swiper.on('slideChangeTransitionEnd', customPagination);
+	// customPagination();
+
+
+	prevBtn.addEventListener('click', () => {
+		swiper.slidePrev()
+	})
+
+	nextBtn.addEventListener('click', () => {
+		swiper.slideNext()
+	})
 }

@@ -39,6 +39,7 @@
     "sass": "^1.79.4"
   },
   "dependencies": {
-    "chalk": "^5.4.1"
+    "chalk": "^5.4.1",
+    "swiper": "^12.1.0"
   }
 }

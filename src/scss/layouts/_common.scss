@@ -3,83 +3,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-h1 {
-	font-size: 50px;
-
-	@include media ('>=phone') {
-		font-size: 78px;
-	}
-
-	@include media ('>=tablet') {
-		font-size: 124px;
-	}
-
-	@include media ('>=desktop') {
-		font-size: 180px;
-		font-weight: 600;
-	}
-}
-
-h2 {
-	font-size: 34px;
-
-	@include media ('>=phone') {
-		font-size: 42px;
-	}
-
-	@include media ('>=desktop') {
-		font-size: 48px;
-	}
-}
-
-h3 {
-	font-size: 32px;
-
-	@include media ('>=phone') {
-		font-size: 36px;
-	}
-
-	@include media ('>=desktop') {
-		font-size: 40px;
-	}
-}
-
-h4 {
-	font-size: 24px;
-
-	@include media ('>=phone') {
-		font-size: 28px;
-	}
-
-	@include media ('>=desktop') {
-		font-size: 32px;
-	}
-}
-
-h5 {
-	font-size: 20px;
-
-	@include media ('>=phone') {
-		font-size: 24px;
-	}
-
-	@include media ('>=desktop') {
-		font-size: 28px;
-	}
-}
-
-h6 {
-	font-size: 18px;
-
-	@include media ('>=phone') {
-		font-size: 20px;
-	}
-
-	@include media ('>=desktop') {
-		font-size: 24px;
-	}
-}
-
 a {
 	text-decoration: none;
 
@@ -142,7 +65,7 @@ a {
 	}
 	
 	@include media(">=desktop") {
-		padding: 30px 0;
+		padding: 50px 0 60px;
 		min-height: 936px;
 	}
 
@@ -210,6 +133,43 @@ a {
 		
 		@include media(">=tablet") {
 			margin-top: 60px;
+		}
+	}
+}
+
+.products-section {
+	background: $white500;
+	padding: 30px 0;
+	color: $gray;
+	
+	@include media('>=1024px') {
+		padding: 60px 0;
+	}
+
+	.container {
+		max-width: 1620px;
+	}
+
+	.title-block {
+		text-align: center;
+		margin: 0 0 90px;
+		
+		h3 {
+			color: $brown;
+			margin: 0 0 .3em;
+		}
+	}
+
+	.swiper-slide {
+
+		&:not(.swiper-slide-active) {
+			scale: .64;
+			filter: blur(6.5625px);
+		}
+
+		.img-holder {
+			max-width: 396px;
+			margin: 0 auto;
 		}
 	}
 }

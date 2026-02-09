@@ -1,7 +1,9 @@
 // Colors
 $black: #000;
-$gray: #999;
+$gray: #8B8782;
 $white: #fff;
+
+$white500: #F5F5F5;
 
 $brown: #52483E;
 
@@ -12,7 +14,7 @@ $font-sans-serif: 'Poppins', 'Arial', 'Helvetica', sans-serif;
 // Body styles
 $body-background-color: $white;
 $body-text-weight:		400;
-$body-font-size: 		16px;
+$body-font-size: 		24px;
 $body-line-height:		1.5;
 $body-font-family:		$font-sans-serif;
 $body-text-color:		$black;
@@ -26,21 +28,22 @@ $link-color:		   inherit;
 $link-text-decoration: underline;
 
 // Headings
-$headings-font-weight: 700;
+$headings-font-weight: 600;
 $headings-font-family: $font-sans-serif;
 $headings-color:	   inherit;
 	//h1
-	$h1-fs-phone:   30px;
-	$h1-fs-tablet:  35px;
-	$h1-fs-desktop: 40px;
+	$h1-fs-xs-phone: 50px;
+	$h1-fs-phone:   78px;
+	$h1-fs-tablet:  124px;
+	$h1-fs-desktop: 180px;
 	//h2
-	$h2-fs-phone:   25px;
-	$h2-fs-tablet:  30px;
-	$h2-fs-desktop: 35px;
+	$h2-fs-phone:   44px;
+	$h2-fs-tablet:  60px;
+	$h2-fs-desktop: 86px;
 	//h3
-	$h3-fs-phone:   23px;
-	$h3-fs-tablet:  27px;
-	$h3-fs-desktop: 30px;
+	$h3-fs-phone:   38px;
+	$h3-fs-tablet:  48px;
+	$h3-fs-desktop: 56px;
 	//h4
 	$h4-fs-phone:   21px;
 	$h4-fs-tablet:  24px;

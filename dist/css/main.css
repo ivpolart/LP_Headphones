@@ -414,7 +414,7 @@ img {
 body {
   background: #fff;
   color: #000;
-  font: 400 16px/1.5 "Poppins", "Arial", "Helvetica", sans-serif;
+  font: 400 24px/1.5 "Poppins", "Arial", "Helvetica", sans-serif;
   min-width: 320px;
 }
 
@@ -437,50 +437,55 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 0.5em;
   color: inherit;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
 }
 @media (min-width: 480px) {
   h1 {
-    font-size: 35px;
+    font-size: 78px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 124px;
   }
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 40px;
+    font-size: 180px;
   }
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 44px;
 }
 @media (min-width: 480px) {
   h2 {
-    font-size: 30px;
+    font-size: 60px;
   }
 }
 @media (min-width: 1024px) {
   h2 {
-    font-size: 35px;
+    font-size: 86px;
   }
 }
 
 h3 {
-  font-size: 23px;
+  font-size: 38px;
 }
 @media (min-width: 480px) {
   h3 {
-    font-size: 27px;
+    font-size: 48px;
   }
 }
 @media (min-width: 1024px) {
   h3 {
-    font-size: 30px;
+    font-size: 56px;
   }
 }
 
@@ -794,96 +799,6 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 50px;
-}
-@media (min-width: 480px) {
-  h1 {
-    font-size: 78px;
-  }
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 124px;
-  }
-}
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 180px;
-    font-weight: 600;
-  }
-}
-
-h2 {
-  font-size: 34px;
-}
-@media (min-width: 480px) {
-  h2 {
-    font-size: 42px;
-  }
-}
-@media (min-width: 1024px) {
-  h2 {
-    font-size: 48px;
-  }
-}
-
-h3 {
-  font-size: 32px;
-}
-@media (min-width: 480px) {
-  h3 {
-    font-size: 36px;
-  }
-}
-@media (min-width: 1024px) {
-  h3 {
-    font-size: 40px;
-  }
-}
-
-h4 {
-  font-size: 24px;
-}
-@media (min-width: 480px) {
-  h4 {
-    font-size: 28px;
-  }
-}
-@media (min-width: 1024px) {
-  h4 {
-    font-size: 32px;
-  }
-}
-
-h5 {
-  font-size: 20px;
-}
-@media (min-width: 480px) {
-  h5 {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1024px) {
-  h5 {
-    font-size: 28px;
-  }
-}
-
-h6 {
-  font-size: 18px;
-}
-@media (min-width: 480px) {
-  h6 {
-    font-size: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  h6 {
-    font-size: 24px;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -948,7 +863,7 @@ a:hover {
 }
 @media (min-width: 1024px) {
   .intro-section {
-    padding: 30px 0;
+    padding: 50px 0 60px;
     min-height: 936px;
   }
 }
@@ -1021,5 +936,35 @@ a:hover {
   .intro-section .title-02 {
     margin-top: 60px;
   }
+}
+
+.products-section {
+  background: #F5F5F5;
+  padding: 30px 0;
+  color: #8B8782;
+}
+@media (min-width: 1024px) {
+  .products-section {
+    padding: 60px 0;
+  }
+}
+.products-section .container {
+  max-width: 1620px;
+}
+.products-section .title-block {
+  text-align: center;
+  margin: 0 0 90px;
+}
+.products-section .title-block h3 {
+  color: #52483E;
+  margin: 0 0 0.3em;
+}
+.products-section .swiper-slide:not(.swiper-slide-active) {
+  scale: 0.64;
+  filter: blur(6.5625px);
+}
+.products-section .swiper-slide .img-holder {
+  max-width: 396px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

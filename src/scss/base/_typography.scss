@@ -29,9 +29,13 @@ h6 {
 }
 
 h1 {
-	font-size: $h1-fs-phone;
+	font-size: $h1-fs-xs-phone;
 
 	@include media ('>=phone') {
+		font-size: $h1-fs-phone;
+	}
+
+	@include media ('>=tablet') {
 		font-size: $h1-fs-tablet;
 	}
 

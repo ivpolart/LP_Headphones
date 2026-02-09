@@ -50,4 +50,4 @@ function initSlider() {
 	// 	if (e.target.dataset.dir === 'prev') swiper.slidePrev();
 	// 	if (e.target.dataset.dir === 'next') swiper.slideNext();
 	// });
-}
+} 

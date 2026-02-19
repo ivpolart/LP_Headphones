@@ -1,6 +1,9 @@
 // Colors
 $black: #000;
 $gray: #8B8782;
+
+$gray500: #3B3B3B;
+
 $white: #fff;
 
 $white500: #F5F5F5;
@@ -32,26 +35,27 @@ $headings-font-weight: 600;
 $headings-font-family: $font-sans-serif;
 $headings-color:	   inherit;
 	//h1
-	$h1-fs-xs-phone: 50px;
+	$h1-fs-xs-phone: 60px;
 	$h1-fs-phone:   78px;
 	$h1-fs-tablet:  124px;
 	$h1-fs-desktop: 180px;
 	//h2
-	$h2-fs-phone:   44px;
-	$h2-fs-tablet:  60px;
+	$h2-fs-xs-phone: 48px;
+	$h2-fs-phone:   60px;
+	$h2-fs-tablet:  70px;
 	$h2-fs-desktop: 86px;
 	//h3
 	$h3-fs-phone:   38px;
 	$h3-fs-tablet:  48px;
 	$h3-fs-desktop: 56px;
 	//h4
-	$h4-fs-phone:   21px;
-	$h4-fs-tablet:  24px;
-	$h4-fs-desktop: 27px;
+	$h4-fs-phone:   30px;
+	$h4-fs-tablet:  36px;
+	$h4-fs-desktop: 42px;
 	//h5
-	$h5-fs-phone:   18px;
-	$h5-fs-tablet:  21px;
-	$h5-fs-desktop: 23px;
+	$h5-fs-phone:   20px;
+	$h5-fs-tablet:  24px;
+	$h5-fs-desktop: 32px;
 	//h6
 	$h6-fs-phone:   16px;
 	$h6-fs-tablet:  18px;

@@ -58,10 +58,4 @@ input[type='submit'] {
 	cursor: pointer;
 	outline: none;
 	border: none;
-	margin: 20px 0 0;
-
-	@include media ('>=tablet') {
-		padding: 22px 38px;
-		min-width: 240px;
-	}
 }
